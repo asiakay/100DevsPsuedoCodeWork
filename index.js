@@ -17,7 +17,7 @@
 const truncate = (str, maxlength) => {
   // if the str's length is greater than maxlength
   if(str.length>maxlength){
-    return str.slice(0, 17) + "..."
+    return str.slice(0, 18) + "..."
   }
   //first 17 characters + "..."
   //else return str
@@ -27,7 +27,8 @@ const truncate = (str, maxlength) => {
 
 }
 
-console.log(truncate(("What I'd like to tell on this topic is:", 20)))
+console.log(truncate("What I'd like to tell on this topic is:", 20))
+console.log(truncate("Hi everyone!", 20))
 
 
 
